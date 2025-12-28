@@ -27,7 +27,7 @@ This project is automatically deployed to **GitHub Pages** using GitHub Actions.
 - **CI/CD**: The `.github/workflows/deploy.yml` handles the build and deployment process on every push to the `main` branch.
 
 ## 👨‍💻 About Me
-I am a Software Test Engineer with 4+ years of experience in building robust automation frameworks and validating complex data pipelines. Currently contributing to critical modules at **Siemens India**.
+I am a Software Test Engineer with 4+ years of experience in building robust automation frameworks and validating complex data pipelines. Currently contributing to critical modules at a **Leading Global Technology Company**.
 
 ---
 *Created by Mahesh Gachale - 2025*
