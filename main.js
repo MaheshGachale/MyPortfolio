@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mentorshipCard) {
         mentorshipCard.addEventListener('click', () => {
             // Navigate to mentorship page
-            window.location.href = 'mentorship.html';
+            window.location.href = '/mentorship';
         });
     }
 
