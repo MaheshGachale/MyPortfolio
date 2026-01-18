@@ -1,7 +1,14 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 export default defineConfig({
-    // If you are deploying to https://<USERNAME>.github.io/<REPO>/
-    // change 'Portfolio' to your actual repository name
     base: './',
+    build: {
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                mentorship: resolve(__dirname, 'mentorship.html')
+            }
+        }
+    }
 })
