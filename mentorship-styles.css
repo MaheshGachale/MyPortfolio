@@ -1,0 +1,425 @@
+/* Mentorship Page Styles */
+
+/* Mentorship Hero Section */
+.mentorship-hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.mentorship-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.mentorship-hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.mentorship-hero-content p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.badge-animated {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+    }
+}
+
+.mentorship-stats {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.topmate-btn-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 1.25rem 2.5rem;
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);
+}
+
+.topmate-btn-large:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(79, 70, 229, 0.4);
+}
+
+.topmate-btn-large svg {
+    width: 24px;
+    height: 24px;
+}
+
+.topmate-btn-large i {
+    transition: transform 0.3s ease;
+}
+
+.topmate-btn-large:hover i {
+    transform: translateX(5px);
+}
+
+/* Mentorship Hero Visual */
+.mentorship-hero-visual {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentor-card {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 20px 60px rgba(79, 70, 229, 0.4);
+}
+
+.mentor-icon {
+    font-size: 5rem;
+    color: white;
+}
+
+.mentor-pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-xl);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+.floating-badge {
+    position: absolute;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: var(--shadow-lg);
+    animation: floatBadge 4s ease-in-out infinite;
+}
+
+.floating-badge i {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.floating-badge span {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.badge-1 {
+    top: 10%;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.badge-2 {
+    top: 50%;
+    right: 0;
+    animation-delay: 1.3s;
+}
+
+.badge-3 {
+    bottom: 10%;
+    left: 10%;
+    animation-delay: 2.6s;
+}
+
+@keyframes floatBadge {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Mentorship Offerings Section */
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.offering-card {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.offering-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.offering-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.offering-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.offering-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.offering-card>p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.offering-features {
+    list-style: none;
+}
+
+.offering-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+}
+
+.offering-features i {
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+/* Process Timeline */
+.process-timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.process-step {
+    text-align: center;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);
+}
+
+.step-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+}
+
+.step-content p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Mentorship CTA */
+.cta-content-center {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-content-center h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-content-center p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .mentorship-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .mentorship-hero-content h1 {
+        font-size: 2.75rem;
+    }
+
+    .mentorship-stats {
+        justify-content: center;
+    }
+
+    .mentorship-hero-visual {
+        height: 400px;
+        order: -1;
+    }
+
+    .offerings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .mentorship-hero {
+        min-height: auto;
+        padding-top: 80px;
+    }
+
+    .mentorship-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .mentorship-hero-content p {
+        font-size: 1.125rem;
+    }
+
+    .mentorship-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+
+    .topmate-btn-large {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .mentorship-hero-visual {
+        height: 300px;
+    }
+
+    .mentor-card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mentor-icon {
+        font-size: 4rem;
+    }
+
+    .floating-badge {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .floating-badge i {
+        font-size: 1.25rem;
+    }
+
+    .process-timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content-center h2 {
+        font-size: 2rem;
+    }
+
+    .cta-content-center p {
+        font-size: 1.125rem;
+    }
+}

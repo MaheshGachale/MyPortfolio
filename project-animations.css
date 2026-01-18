@@ -1,0 +1,884 @@
+/* Animated Project Backgrounds */
+.animated-project-bg {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Project 1 - ECommerce Animation */
+.project-ecommerce {
+    background: linear-gradient(135deg, #4f46e5, #4338ca);
+}
+
+.cart-animation {
+    position: relative;
+    z-index: 2;
+}
+
+.cart-icon {
+    font-size: 4rem;
+    color: white;
+    animation: cartBounce 2s ease-in-out infinite;
+}
+
+.cart-items {
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    display: flex;
+    gap: 3px;
+}
+
+.cart-item {
+    width: 8px;
+    height: 8px;
+    background: #22d3ee;
+    border-radius: 2px;
+    animation: itemDrop 1.5s ease-in-out infinite;
+}
+
+.cart-item:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.cart-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes cartBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes itemDrop {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.test-checkmarks {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+}
+
+.test-checkmarks i {
+    font-size: 1.5rem;
+    color: #10b981;
+    opacity: 0;
+    animation: checkAppear 3s ease-in-out infinite;
+}
+
+.check-1 {
+    animation-delay: 0.5s;
+}
+
+.check-2 {
+    animation-delay: 1s;
+}
+
+.check-3 {
+    animation-delay: 1.5s;
+}
+
+@keyframes checkAppear {
+
+    0%,
+    20% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    30%,
+    90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+/* Project 2 - API Testing Animation */
+.project-api {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.api-flow {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+    position: relative;
+}
+
+.api-node {
+    background: white;
+    color: #0891b2;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: nodeGlow 2s ease-in-out infinite;
+}
+
+.node-1 {
+    animation-delay: 0s;
+}
+
+.node-2 {
+    animation-delay: 0.7s;
+}
+
+.node-3 {
+    animation-delay: 1.4s;
+}
+
+@keyframes nodeGlow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(34, 211, 238, 0.6);
+    }
+}
+
+.api-arrow {
+    font-size: 2rem;
+    color: white;
+    animation: arrowPulse 2s ease-in-out infinite;
+}
+
+.arrow-1 {
+    animation-delay: 0.35s;
+}
+
+.arrow-2 {
+    animation-delay: 1.05s;
+}
+
+@keyframes arrowPulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+        transform: translateX(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(5px);
+    }
+}
+
+.api-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: particleFloat 4s ease-in-out infinite;
+}
+
+.p-1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.p-2 {
+    top: 60%;
+    left: 80%;
+    animation-delay: 1s;
+}
+
+.p-3 {
+    top: 80%;
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.p-4 {
+    top: 30%;
+    left: 70%;
+    animation-delay: 3s;
+}
+
+@keyframes particleFloat {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(20px, -30px);
+        opacity: 1;
+    }
+}
+
+/* Project 3 - Playwright Animation */
+.project-playwright {
+    background: linear-gradient(135deg, #a855f7, #9333ea);
+}
+
+.browser-windows {
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.browser-window {
+    width: 100px;
+    height: 70px;
+    background: white;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: browserSlide 3s ease-in-out infinite;
+}
+
+.win-1 {
+    animation-delay: 0s;
+}
+
+.win-2 {
+    animation-delay: 0.5s;
+}
+
+@keyframes browserSlide {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+.browser-dots {
+    display: flex;
+    gap: 5px;
+    padding: 8px;
+}
+
+.browser-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #9333ea;
+}
+
+.browser-dots span:nth-child(1) {
+    background: #ef4444;
+}
+
+.browser-dots span:nth-child(2) {
+    background: #f59e0b;
+}
+
+.browser-dots span:nth-child(3) {
+    background: #10b981;
+}
+
+.test-runner {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.test-line {
+    width: 80px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    animation: testRun 2s ease-in-out infinite;
+}
+
+.test-line:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.test-line:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.test-line:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes testRun {
+
+    0%,
+    100% {
+        width: 20px;
+        opacity: 0.5;
+    }
+
+    50% {
+        width: 80px;
+        opacity: 1;
+    }
+}
+
+/* Project 4 - Automation Flow Animation */
+.project-automation {
+    background: linear-gradient(135deg, #ec4899, #db2777);
+}
+
+.automation-flow {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+    position: relative;
+}
+
+.flow-step {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: stepPulse 3s ease-in-out infinite;
+}
+
+.flow-step i {
+    font-size: 1.5rem;
+    color: #db2777;
+}
+
+.step-1 {
+    animation-delay: 0s;
+}
+
+.step-2 {
+    animation-delay: 1s;
+}
+
+.step-3 {
+    animation-delay: 2s;
+}
+
+@keyframes stepPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    33% {
+        transform: scale(1.15);
+        box-shadow: 0 6px 20px rgba(236, 72, 153, 0.6);
+    }
+}
+
+.flow-connector {
+    width: 30px;
+    height: 3px;
+    background: white;
+    position: relative;
+    animation: connectorGrow 3s ease-in-out infinite;
+}
+
+@keyframes connectorGrow {
+
+    0%,
+    100% {
+        width: 10px;
+        opacity: 0.5;
+    }
+
+    50% {
+        width: 30px;
+        opacity: 1;
+    }
+}
+
+.code-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.code-bit {
+    position: absolute;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+    animation: codeBitFloat 4s ease-in-out infinite;
+}
+
+.code-bit:nth-child(1) {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.code-bit:nth-child(2) {
+    top: 70%;
+    left: 75%;
+    animation-delay: 1.3s;
+}
+
+.code-bit:nth-child(3) {
+    top: 40%;
+    left: 85%;
+    animation-delay: 2.6s;
+}
+
+@keyframes codeBitFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(10deg);
+        opacity: 0.8;
+    }
+}
+
+/* Open Source Contributions Animations */
+.oss-visual {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* OSS 1 - Flat File Reader */
+.oss-flatfile {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+}
+
+.file-icons {
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.file-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    animation: fileFloat 3s ease-in-out infinite;
+}
+
+.csv-icon {
+    animation-delay: 0s;
+}
+
+.json-icon {
+    animation-delay: 0.5s;
+}
+
+.avro-icon {
+    animation-delay: 1s;
+}
+
+.file-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.file-icon span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+@keyframes fileFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.data-flow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.flow-line {
+    width: 40px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    animation: flowPulse 2s ease-in-out infinite;
+}
+
+.line-1 {
+    animation-delay: 0s;
+}
+
+.line-2 {
+    animation-delay: 0.3s;
+}
+
+.line-3 {
+    animation-delay: 0.6s;
+}
+
+@keyframes flowPulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        width: 20px;
+    }
+
+    50% {
+        opacity: 1;
+        width: 40px;
+    }
+}
+
+.vscode-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.4);
+    animation: vscodeSpin 8s linear infinite;
+}
+
+@keyframes vscodeSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* OSS 2 - STDF Record Viewer */
+.oss-stdf {
+    background: linear-gradient(135deg, #06b6d4, #22d3ee);
+}
+
+.test-data-flow {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.data-packet {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 3px;
+    animation: packetMove 2.5s ease-in-out infinite;
+}
+
+.packet-1 {
+    animation-delay: 0s;
+}
+
+.packet-2 {
+    animation-delay: 0.5s;
+}
+
+.packet-3 {
+    animation-delay: 1s;
+}
+
+@keyframes packetMove {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateY(30px) scale(1.2);
+        opacity: 1;
+    }
+}
+
+.analyzer-screen {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.screen-line {
+    width: 80px;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    animation: screenScan 3s ease-in-out infinite;
+}
+
+.screen-line:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.screen-line:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.screen-line:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.screen-line:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+@keyframes screenScan {
+
+    0%,
+    100% {
+        width: 40px;
+        opacity: 0.5;
+    }
+
+    50% {
+        width: 80px;
+        opacity: 1;
+    }
+}
+
+.chip-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    animation: chipPulse 2s ease-in-out infinite;
+}
+
+@keyframes chipPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+/* OSS 3 - SQL DDL Viewer */
+.oss-sql {
+    background: linear-gradient(135deg, #a855f7, #c084fc);
+}
+
+.sql-tables {
+    display: flex;
+    gap: 30px;
+    z-index: 2;
+    position: relative;
+}
+
+.table-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: tableSlide 3s ease-in-out infinite;
+}
+
+.table-icon i {
+    font-size: 2rem;
+    color: #a855f7;
+}
+
+.table-1 {
+    animation-delay: 0s;
+}
+
+.table-2 {
+    animation-delay: 0.5s;
+}
+
+@keyframes tableSlide {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-8px);
+    }
+}
+
+.sql-connections {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.connection {
+    position: absolute;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.6);
+    animation: connectionGrow 2.5s ease-in-out infinite;
+}
+
+.conn-1 {
+    top: 40%;
+    left: 30%;
+    width: 40%;
+    animation-delay: 0s;
+}
+
+.conn-2 {
+    top: 60%;
+    left: 30%;
+    width: 40%;
+    animation-delay: 0.5s;
+}
+
+@keyframes connectionGrow {
+
+    0%,
+    100% {
+        width: 20%;
+        opacity: 0.3;
+    }
+
+    50% {
+        width: 40%;
+        opacity: 1;
+    }
+}
+
+.ddl-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.sql-keyword {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    border-radius: 6px;
+    animation: keywordBlink 2s ease-in-out infinite;
+}
+
+.sql-keyword:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.sql-keyword:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+@keyframes keywordBlink {
+
+    0%,
+    100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}

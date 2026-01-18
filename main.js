@@ -1,4 +1,58 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Landing Choice Screen
+    const landingChoice = document.getElementById('landingChoice');
+    const mainContent = document.getElementById('mainContent');
+    const portfolioCard = document.querySelector('.portfolio-card');
+    const mentorshipCard = document.querySelector('.mentorship-card');
+    const skipToPortfolio = document.getElementById('skipToPortfolio');
+
+    // Handle Portfolio Card Click
+    if (portfolioCard) {
+        portfolioCard.addEventListener('click', () => {
+            transitionToContent('portfolio');
+        });
+    }
+
+    // Handle Mentorship Card Click
+    if (mentorshipCard) {
+        mentorshipCard.addEventListener('click', () => {
+            // Navigate to mentorship page
+            window.location.href = 'mentorship.html';
+        });
+    }
+
+    // Handle Skip Link
+    if (skipToPortfolio) {
+        skipToPortfolio.addEventListener('click', (e) => {
+            e.preventDefault();
+            transitionToContent('portfolio');
+        });
+    }
+
+    function transitionToContent(choice) {
+        // Add fade-out animation
+        landingChoice.classList.add('fade-out');
+
+        // Wait for animation to complete
+        setTimeout(() => {
+            landingChoice.style.display = 'none';
+            mainContent.classList.remove('hidden');
+
+            // If mentorship was chosen, scroll to topmate section
+            if (choice === 'mentorship') {
+                setTimeout(() => {
+                    const topmateSection = document.querySelector('.topmate-section');
+                    if (topmateSection) {
+                        topmateSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 100);
+            } else {
+                // Scroll to top for portfolio
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }, 600);
+    }
+
     // Header Scroll Effect
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {

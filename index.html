@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- EmailJS SDK (v4) -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -28,472 +29,710 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav class="container">
-            <div class="logo">Mahesh<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="#contact" class="btn btn-primary nav-cta">Work With Me</a>
-            <div class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+    <!-- Landing Choice Screen -->
+    <div id="landingChoice" class="landing-choice">
+        <div class="landing-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <h2 class="reveal">Hi, I'm <span class="gradient-text">Mahesh Gachale</span></h2>
-                    <h1 class="reveal delay-1">Software Test Engineer | ETL Test Engineer | Automation Specialist | Full
-                        stack QA</h1>
-                    <p class="reveal delay-2">Accomplished professional with 4+ years of experience in championing
-                        organization values and ensuring end-to-end software quality across UI, API, and Data pipelines.
-                    </p>
-                    <div class="hero-btns reveal delay-3">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#" class="btn btn-outline">Download Resume</a>
-                    </div>
-                </div>
-                <div class="hero-image reveal delay-4">
-                    <div class="blob-wrapper">
-                        <img src="assets/hero_illustration.png" alt="Software Test Engineering Illustration">
-                        <div class="blob"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="mouse"></div>
-                <span>Scroll Down</span>
-            </div>
-        </section>
+            <!-- Floating Dots -->
+            <div class="floating-dot dot-1"></div>
+            <div class="floating-dot dot-2"></div>
+            <div class="floating-dot dot-3"></div>
+            <div class="floating-dot dot-4"></div>
+            <div class="floating-dot dot-5"></div>
+            <div class="floating-dot dot-6"></div>
 
-        <!-- About Section -->
-        <section id="about" class="about section-padding">
-            <div class="container">
-                <div class="section-title">
-                    <span class="subtitle">About Me</span>
-                    <h2>Engineering Quality at Every Layer</h2>
-                </div>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>I am a passionate <strong>Software Test Engineer</strong> with a strong focus on
-                            <strong>Automation</strong> and <strong>Data Engineering</strong>. My mission is to bridge
-                            the gap between development and quality by implementing sophisticated testing frameworks and
-                            automated CI/CD pipelines.
-                        </p>
-                        <p>With expertise in <strong>ETL Testing, Playwright Automation, API Testing, Performance
-                                Testing, and Data Validation</strong>, I help organizations ensure their software is
-                            robust and their data is accurate. I thrive on solving complex technical challenges and
-                            optimizing workflows for maximum efficiency.</p>
-                        <p>Currently working as an Individual Contributor at a <strong>Leading Global Technology
-                                Company</strong>, ensuring
-                            end-to-end quality for critical modules using Python, Pytest, AWS, and Redshift.</p>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat-card reveal-up">
-                            <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
-                            <h3>4+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat-card reveal-up delay-1">
-                            <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
-                            <h3>10+</h3>
-                            <p>Open Source Tools</p>
-                        </div>
-                        <div class="stat-card reveal-up delay-2">
-                            <div class="stat-icon"><i class="fas fa-trophy"></i></div>
-                            <h3>5+</h3>
-                            <p>National Awards</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Achievements Section -->
-        <section class="achievements section-padding bg-light">
-            <div class="container">
-                <div class="section-title">
-                    <span class="subtitle">Recognition</span>
-                    <h2>Key Achievements</h2>
-                </div>
-                <div class="achievements-slider reveal-up">
-                    <div class="achievement-card">
-                        <div class="award-icon"><i class="fas fa-award"></i></div>
-                        <p>Quarterly Award (Q1 2025) @ Current Organization</p>
-                    </div>
-                    <div class="achievement-card">
-                        <div class="award-icon"><i class="fas fa-star"></i></div>
-                        <p>Performance Award (2023-24) @ Quantiphi</p>
-                    </div>
-                    <div class="achievement-card">
-                        <div class="award-icon"><i class="fas fa-thumbs-up"></i></div>
-                        <p>End-to-End Quality Delivery Award @ Quantiphi</p>
-                    </div>
-                    <div class="achievement-card">
-                        <div class="award-icon"><i class="fas fa-newspaper"></i></div>
-                        <p>Diligent Contributor Award - Company Newsletter Reflection</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills section-padding">
-            <div class="container">
-                <div class="section-title">
-                    <span class="subtitle">My Expertize</span>
-                    <h2>Technical Skills</h2>
-                </div>
-                <div class="skills-grid">
-                    <!-- Testing Stack -->
-                    <div class="skill-category reveal-up">
-                        <div class="category-header">
-                            <i class="fas fa-vial"></i>
-                            <h3>Testing & Automation</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="tag">Playwright</span>
-                            <span class="tag">PyTest</span>
-                            <span class="tag">API Testing</span>
-                            <span class="tag">Postman</span>
-                            <span class="tag">JMeter</span>
-                            <span class="tag">Performance Testing</span>
-                        </div>
-                    </div>
-                    <!-- Data -->
-                    <div class="skill-category reveal-up delay-1">
-                        <div class="category-header">
-                            <i class="fas fa-database"></i>
-                            <h3>Data & ETL</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="tag">ETL Testing</span>
-                            <span class="tag">Redshift</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">Data Validation</span>
-                            <span class="tag">DWH Concepts</span>
-                            <span class="tag">Oracle/RDS</span>
-                        </div>
-                    </div>
-                    <!-- Languages -->
-                    <div class="skill-category reveal-up delay-2">
-                        <div class="category-header">
-                            <i class="fas fa-code"></i>
-                            <h3>Programming</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Java</span>
-                            <span class="tag">Bash</span>
-                        </div>
-                    </div>
-                    <!-- DevOps & Cloud -->
-                    <div class="skill-category reveal-up delay-3">
-                        <div class="category-header">
-                            <i class="fas fa-cloud"></i>
-                            <h3>Cloud & DevOps</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="tag">AWS</span>
-                            <span class="tag">GCP</span>
-                            <span class="tag">GitHub Actions</span>
-                            <span class="tag">Jenkins</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Jira</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects section-padding bg-light">
-            <div class="container">
-                <div class="section-title">
-                    <span class="subtitle">Latest Work</span>
-                    <h2>Featured Projects</h2>
-                </div>
-                <div class="project-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card reveal-up">
-                        <div class="project-img">
-                            <div class="overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/MaheshGachale/ECommerce_website_Automation"
-                                        target="_blank"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #4f46e5, #4338ca);">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>ECommerce Automation</h3>
-                            <p>End-to-end UI automation for e-commerce platforms using modern testing frameworks.</p>
-                            <div class="tech-stack">
-                                <span>Playwright</span>
-                                <span>Action Chaining</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="project-card reveal-up delay-1">
-                        <div class="project-img">
-                            <div class="overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/MaheshGachale/API_Testing_Project_Python"
-                                        target="_blank"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>API Testing Suite</h3>
-                            <p>Comprehensive REST API validation using Python and Pytest with CI/CD integration.</p>
-                            <div class="tech-stack">
-                                <span>Python</span>
-                                <span>PyTest</span>
-                                <span>Requests</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="project-card reveal-up delay-2">
-                        <div class="project-img">
-                            <div class="overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/MaheshGachale/Playwright_E2E_Understanding_Project"
-                                        target="_blank"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #a855f7, #9333ea);">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Playwright E2E Mastery</h3>
-                            <p>In-depth exploration of Playwright capabilities including multi-browser and mobile
-                                emulation.</p>
-                            <div class="tech-stack">
-                                <span>Playwright</span>
-                                <span>E2E</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 4 -->
-                    <article class="project-card reveal-up delay-3">
-                        <div class="project-img">
-                            <div class="overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/MaheshGachale/E-Commerce_Website_Automation_Project2"
-                                        target="_blank"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #ec4899, #db2777);">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>E-Commerce Automation V2</h3>
-                            <p>Advanced automation project focusing on complex user workflows and state management.</p>
-                            <div class="tech-stack">
-                                <span>Python</span>
-                                <span>Page Object Model</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Open Source Section -->
-                <div class="section-title mt-6">
-                    <span class="subtitle">Impact</span>
-                    <h2>Open Source Contributions</h2>
-                </div>
-                <div class="project-grid">
-                    <article class="project-card reveal-up">
-                        <div class="project-info">
-                            <div class="badge">500+ Downloads</div>
-                            <h3>Flat File Reader (VS Code)</h3>
-                            <p>High-speed CSV/JSON/Avro data explorer helping hundreds of developers daily.</p>
-                            <div class="project-links-row">
-                                <a href="https://marketplace.visualstudio.com/items?itemName=MaheshG.flat-file-reader"
-                                    class="link" target="_blank">Marketplace</a>
-                                <a href="https://github.com/MaheshGachale/Flat-File-Reader" class="link"
-                                    target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project-card reveal-up delay-1">
-                        <div class="project-info">
-                            <div class="badge">50+ Downloads</div>
-                            <h3>STDF Record Viewer</h3>
-                            <p>Dedicated tool for data engineers to analyze Standard Test Data Format files within VS
-                                Code.</p>
-                            <div class="project-links-row">
-                                <a href="https://marketplace.visualstudio.com/items?itemName=MaheshG.stdf-viewer"
-                                    class="link" target="_blank">Marketplace</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project-card reveal-up delay-2">
-                        <div class="project-info">
-                            <div class="badge">20+ Downloads</div>
-                            <h3>SQL DDL Viewer</h3>
-                            <p>Streamlined visualization of SQL Data Definition Language statements for better DB
-                                planning.</p>
-                            <div class="project-links-row">
-                                <a href="https://marketplace.visualstudio.com/items?itemName=MaheshG.ddl-viewer"
-                                    class="link" target="_blank">Marketplace</a>
-                                <a href="https://github.com/MaheshGachale/SQL_DDL_Viewer" class="link"
-                                    target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="experience section-padding">
-            <div class="container">
-                <div class="section-title">
-                    <span class="subtitle">Timeline</span>
-                    <h2>Career Journey</h2>
-                </div>
-                <div class="timeline">
-                    <!-- Current Role -->
-                    <div class="timeline-item reveal-left">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">March 2025 - Present</div>
-                        <div class="timeline-content">
-                            <h3>Software Test Engineer (Full Stack QA)</h3>
-                            <p class="company">Leading Global Technology Company</p>
-                            <ul>
-                                <li>Individual Contributor on critical <strong>SHIP</strong> module, ensuring end-to-end
-                                    quality.</li>
-                                <li>Expertise in <strong>Manual, Automation, API, and ETL testing</strong>.</li>
-                                <li>Implementing UI automation with <strong>Playwright</strong> and ETL automation with
-                                    <strong>Pytest/Redshift</strong>.
-                                </li>
-                                <li>Developed an <strong>AI-based chatbot agent</strong> to streamline test case design.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Previous Role -->
-                    <div class="timeline-item reveal-right">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Sept 2022 - March 2025</div>
-                        <div class="timeline-content">
-                            <h3>Test Automation Engineer</h3>
-                            <p class="company">Quantiphi Private Limited</p>
-                            <ul>
-                                <li>Executed Functional, Integration, Regression, and End-to-End testing for high-stakes
-                                    clients.</li>
-                                <li>Designed and implemented the <strong>Playwright framework</strong> from scratch for
-                                    multiple projects.</li>
-                                <li>Conducted ETL and Database testing using complex SQL queries.</li>
-                                <li>Successfully led automation delivery and received Multiple Performance Awards.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta section-padding">
-            <div class="container">
-                <div class="cta-banner">
-                    <h2>Ready to Scale Your Quality?</h2>
-                    <p>Looking for someone who can automate UI/API tests, validate complex ETL pipelines, and ensure
-                        performance at scale?</p>
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-padding bg-light">
-            <div class="container">
-                <div class="section-title">
-                    <span class="subtitle">Contact</span>
-                    <h2>Get In Touch</h2>
-                </div>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3>Let's build reliable software together</h3>
-                        <p>I'm available for consultations on test architecture, automation frameworks, and data quality
-                            engineering.</p>
-                        <ul class="contact-list">
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <span>maheshgachale85@gmail.com</span>
-                            </li>
-                            <li>
-                                <i class="fab fa-linkedin"></i>
-                                <span>linkedin.com/in/mahesh-gachale-5b7448206</span>
-                            </li>
-                            <li>
-                                <i class="fab fa-github"></i>
-                                <span>github.com/MaheshGachale</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <form class="contact-form" id="contactForm"
-                        action="https://formspree.io/f/maheshgachale85@gmail.com" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                        <div id="formFeedback" class="form-feedback"></div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">Mahesh<span>.</span></div>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-            </div>
-            <div class="footer-socials">
-                <a href="https://linkedin.com/in/mahesh-gachale-5b7448206" target="_blank"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/MaheshGachale" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-            <p class="copyright">&copy; 2025 Mahesh Gachale. All rights reserved.</p>
+            <!-- Geometric Shapes -->
+            <div class="geometric-shape shape-1"></div>
+            <div class="geometric-shape shape-2"></div>
+            <div class="geometric-shape shape-3"></div>
         </div>
-    </footer>
+
+        <div class="landing-content">
+            <div class="landing-header">
+                <h1 class="landing-title">
+                    Welcome to <span class="gradient-text">Mahesh Gachale's</span> Space
+                </h1>
+                <p class="landing-subtitle">Choose your path to explore</p>
+            </div>
+
+            <div class="choice-cards">
+                <!-- Portfolio Card -->
+                <div class="choice-card portfolio-card" data-choice="portfolio">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h2>Mahesh Portfolio</h2>
+                    <p>Explore my work, skills, projects, and professional journey in QA & Automation</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> 4+ Years Experience</li>
+                        <li><i class="fas fa-check"></i> 10+ Open Source Tools</li>
+                        <li><i class="fas fa-check"></i> Multiple Awards</li>
+                    </ul>
+                    <div class="card-button">
+                        <span>View Portfolio</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Mentorship Card -->
+                <div class="choice-card mentorship-card" data-choice="mentorship">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h2>1-on-1 Mentorship</h2>
+                    <p>Get personalized guidance in QA, Automation, and career development</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> Career Guidance</li>
+                        <li><i class="fas fa-check"></i> Framework Design</li>
+                        <li><i class="fas fa-check"></i> Interview Prep</li>
+                    </ul>
+                    <div class="card-button">
+                        <span>Book a Session</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="landing-footer">
+                <p>Not sure? <a href="#" id="skipToPortfolio">Start with Portfolio</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden Initially) -->
+    <div id="mainContent" class="main-content hidden">
+        <header id="header">
+            <nav class="container">
+                <div class="logo">Mahesh Portfolio<span>.</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-primary nav-cta">Work With Me</a>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <h2 class="reveal">Hi, I'm <span class="gradient-text">Mahesh Gachale</span></h2>
+                        <h1 class="reveal delay-1">Software Test Engineer</h1>
+                        <p class="reveal delay-2">Accomplished professional with 4+ years of experience in championing
+                            organization values and ensuring end-to-end software quality across UI, API, and Data
+                            pipelines.
+                        </p>
+                        <div class="hero-btns reveal delay-3">
+                            <a href="#projects" class="btn btn-primary">View My Work</a>
+                            <a href="#" class="btn btn-outline">Download Resume</a>
+                        </div>
+                    </div>
+                    <div class="hero-animation reveal delay-4">
+                        <div class="code-container">
+                            <!-- Floating Tech Icons -->
+                            <div class="tech-icon tech-icon-1">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="tech-icon tech-icon-2">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="tech-icon tech-icon-3">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="tech-icon tech-icon-4">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="tech-icon tech-icon-5">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+
+                            <!-- Code Lines Animation -->
+                            <div class="code-lines">
+                                <div class="code-line" style="animation-delay: 0s;">
+                                    <span class="code-keyword">def</span> <span
+                                        class="code-function">test_automation</span>():
+                                </div>
+                                <div class="code-line" style="animation-delay: 0.5s;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">assert</span> <span
+                                        class="code-variable">quality</span> == <span class="code-string">"100%"</span>
+                                </div>
+                                <div class="code-line" style="animation-delay: 1s;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span
+                                        class="code-string">"Success"</span> ✓
+                                </div>
+                            </div>
+
+                            <!-- Gradient Blob Background -->
+                            <div class="blob"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse"></div>
+                    <span>Scroll Down</span>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about section-padding">
+                <div class="container">
+                    <div class="section-title">
+                        <span class="subtitle">About Me</span>
+                        <h2>Engineering Quality at Every Layer</h2>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>I am a passionate <strong>Software Test Engineer</strong> with a strong focus on
+                                <strong>Automation</strong> and <strong>Data Engineering</strong>. My mission is to
+                                bridge
+                                the gap between development and quality by implementing sophisticated testing frameworks
+                                and
+                                automated CI/CD pipelines.
+                            </p>
+                            <p>With expertise in <strong>ETL Testing, Playwright Automation, API Testing, Performance
+                                    Testing, and Data Validation</strong>, I help organizations ensure their software is
+                                robust and their data is accurate. I thrive on solving complex technical challenges and
+                                optimizing workflows for maximum efficiency.</p>
+                            <p>Currently working as an Individual Contributor at a <strong>Siemens India</strong>,
+                                ensuring
+                                end-to-end quality for critical modules using Python, Pytest, AWS, and Redshift.</p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-card reveal-up">
+                                <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                                <h3>4+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-card reveal-up delay-1">
+                                <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
+                                <h3>10+</h3>
+                                <p>Open Source Tools</p>
+                            </div>
+                            <div class="stat-card reveal-up delay-2">
+                                <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                                <h3>5+</h3>
+                                <p>Awards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section class="achievements section-padding bg-light">
+                <div class="container">
+                    <div class="section-title">
+                        <span class="subtitle">Recognition</span>
+                        <h2>Key Achievements</h2>
+                    </div>
+                    <div class="achievements-slider reveal-up">
+                        <div class="achievement-card">
+                            <div class="award-icon"><i class="fas fa-award"></i></div>
+                            <p>Quarterly Award (Q1 2025) @ Siemens India</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="award-icon"><i class="fas fa-star"></i></div>
+                            <p>Performance Award (2023-24) @ Quantiphi</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="award-icon"><i class="fas fa-thumbs-up"></i></div>
+                            <p>End-to-End Quality Delivery Award @ Quantiphi</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="award-icon"><i class="fas fa-newspaper"></i></div>
+                            <p>Diligent Contributor Award - Company Newsletter Reflection</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills section-padding">
+                <div class="container">
+                    <div class="section-title">
+                        <span class="subtitle">My Expertize</span>
+                        <h2>Technical Skills</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <!-- Testing Stack -->
+                        <div class="skill-category reveal-up">
+                            <div class="category-header">
+                                <i class="fas fa-vial"></i>
+                                <h3>Testing & Automation</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="tag">Playwright</span>
+                                <span class="tag">PyTest</span>
+                                <span class="tag">API Testing</span>
+                                <span class="tag">Postman</span>
+                                <span class="tag">JMeter</span>
+                                <span class="tag">Performance Testing</span>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="skill-category reveal-up delay-1">
+                            <div class="category-header">
+                                <i class="fas fa-database"></i>
+                                <h3>Data & ETL</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="tag">ETL Testing</span>
+                                <span class="tag">Redshift</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Data Validation</span>
+                                <span class="tag">DWH Concepts</span>
+                                <span class="tag">Oracle/RDS</span>
+                            </div>
+                        </div>
+                        <!-- Languages -->
+                        <div class="skill-category reveal-up delay-2">
+                            <div class="category-header">
+                                <i class="fas fa-code"></i>
+                                <h3>Programming</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">Bash</span>
+                            </div>
+                        </div>
+                        <!-- DevOps & Cloud -->
+                        <div class="skill-category reveal-up delay-3">
+                            <div class="category-header">
+                                <i class="fas fa-cloud"></i>
+                                <h3>Cloud & DevOps</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">GCP</span>
+                                <span class="tag">GitHub Actions</span>
+                                <span class="tag">Jenkins</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Jira</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects section-padding bg-light">
+                <div class="container">
+                    <div class="section-title">
+                        <span class="subtitle">Latest Work</span>
+                        <h2>Featured Projects</h2>
+                    </div>
+                    <div class="project-grid">
+                        <!-- Project 1 -->
+                        <article class="project-card reveal-up">
+                            <div class="project-img">
+                                <div class="overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/MaheshGachale/ECommerce_website_Automation"
+                                            target="_blank"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="animated-project-bg project-ecommerce">
+                                    <div class="cart-animation">
+                                        <i class="fas fa-shopping-cart cart-icon"></i>
+                                        <div class="cart-items">
+                                            <div class="cart-item"></div>
+                                            <div class="cart-item"></div>
+                                            <div class="cart-item"></div>
+                                        </div>
+                                    </div>
+                                    <div class="test-checkmarks">
+                                        <i class="fas fa-check-circle check-1"></i>
+                                        <i class="fas fa-check-circle check-2"></i>
+                                        <i class="fas fa-check-circle check-3"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>ECommerce Automation</h3>
+                                <p>End-to-end UI automation for e-commerce platforms using modern testing frameworks.
+                                </p>
+                                <div class="tech-stack">
+                                    <span>Playwright</span>
+                                    <span>Action Chaining</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 2 -->
+                        <article class="project-card reveal-up delay-1">
+                            <div class="project-img">
+                                <div class="overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/MaheshGachale/API_Testing_Project_Python"
+                                            target="_blank"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="animated-project-bg project-api">
+                                    <div class="api-flow">
+                                        <div class="api-node node-1">GET</div>
+                                        <div class="api-arrow arrow-1">→</div>
+                                        <div class="api-node node-2">POST</div>
+                                        <div class="api-arrow arrow-2">→</div>
+                                        <div class="api-node node-3">200</div>
+                                    </div>
+                                    <div class="api-particles">
+                                        <div class="particle p-1"></div>
+                                        <div class="particle p-2"></div>
+                                        <div class="particle p-3"></div>
+                                        <div class="particle p-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>API Testing Suite</h3>
+                                <p>Comprehensive REST API validation using Python and Pytest with CI/CD integration.</p>
+                                <div class="tech-stack">
+                                    <span>Python</span>
+                                    <span>PyTest</span>
+                                    <span>Requests</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 3 -->
+                        <article class="project-card reveal-up delay-2">
+                            <div class="project-img">
+                                <div class="overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/MaheshGachale/Playwright_E2E_Understanding_Project"
+                                            target="_blank"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="animated-project-bg project-playwright">
+                                    <div class="browser-windows">
+                                        <div class="browser-window win-1">
+                                            <div class="browser-dots">
+                                                <span></span><span></span><span></span>
+                                            </div>
+                                        </div>
+                                        <div class="browser-window win-2">
+                                            <div class="browser-dots">
+                                                <span></span><span></span><span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-runner">
+                                        <div class="test-line"></div>
+                                        <div class="test-line"></div>
+                                        <div class="test-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Playwright E2E Mastery</h3>
+                                <p>In-depth exploration of Playwright capabilities including multi-browser and mobile
+                                    emulation.</p>
+                                <div class="tech-stack">
+                                    <span>Playwright</span>
+                                    <span>E2E</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 4 -->
+                        <article class="project-card reveal-up delay-3">
+                            <div class="project-img">
+                                <div class="overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/MaheshGachale/E-Commerce_Website_Automation_Project2"
+                                            target="_blank"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="animated-project-bg project-automation">
+                                    <div class="automation-flow">
+                                        <div class="flow-step step-1">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                        <div class="flow-connector"></div>
+                                        <div class="flow-step step-2">
+                                            <i class="fas fa-cog"></i>
+                                        </div>
+                                        <div class="flow-connector"></div>
+                                        <div class="flow-step step-3">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="code-particles">
+                                        <span class="code-bit">{ }</span>
+                                        <span class="code-bit">[ ]</span>
+                                        <span class="code-bit">&lt;/&gt;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>E-Commerce Automation V2</h3>
+                                <p>Advanced automation project focusing on complex user workflows and state management.
+                                </p>
+                                <div class="tech-stack">
+                                    <span>Python</span>
+                                    <span>Page Object Model</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Open Source Section -->
+                    <div class="section-title mt-6">
+                        <span class="subtitle">Impact</span>
+                        <h2>Open Source Contributions</h2>
+                    </div>
+                    <div class="project-grid">
+                        <article class="project-card oss-card reveal-up">
+                            <div class="oss-visual oss-flatfile">
+                                <div class="file-icons">
+                                    <div class="file-icon csv-icon">
+                                        <i class="fas fa-file-csv"></i>
+                                        <span>CSV</span>
+                                    </div>
+                                    <div class="file-icon json-icon">
+                                        <i class="fas fa-file-code"></i>
+                                        <span>JSON</span>
+                                    </div>
+                                    <div class="file-icon avro-icon">
+                                        <i class="fas fa-database"></i>
+                                        <span>AVRO</span>
+                                    </div>
+                                </div>
+                                <div class="data-flow">
+                                    <div class="flow-line line-1"></div>
+                                    <div class="flow-line line-2"></div>
+                                    <div class="flow-line line-3"></div>
+                                </div>
+                                <div class="vscode-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="badge">500+ Downloads</div>
+                                <h3>Flat File Reader (VS Code)</h3>
+                                <p>High-speed CSV/JSON/Avro data explorer helping hundreds of developers daily.</p>
+                                <div class="project-links-row">
+                                    <a href="https://marketplace.visualstudio.com/items?itemName=MaheshG.flat-file-reader"
+                                        class="link" target="_blank">Marketplace</a>
+                                    <a href="https://github.com/MaheshGachale/Flat-File-Reader" class="link"
+                                        target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card oss-card reveal-up delay-1">
+                            <div class="oss-visual oss-stdf">
+                                <div class="test-data-flow">
+                                    <div class="data-packet packet-1"></div>
+                                    <div class="data-packet packet-2"></div>
+                                    <div class="data-packet packet-3"></div>
+                                </div>
+                                <div class="analyzer-screen">
+                                    <div class="screen-line"></div>
+                                    <div class="screen-line"></div>
+                                    <div class="screen-line"></div>
+                                    <div class="screen-line"></div>
+                                </div>
+                                <div class="chip-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="badge">50+ Downloads</div>
+                                <h3>STDF Record Viewer</h3>
+                                <p>Dedicated tool for data engineers to analyze Standard Test Data Format files within
+                                    VS
+                                    Code.</p>
+                                <div class="project-links-row">
+                                    <a href="https://marketplace.visualstudio.com/items?itemName=MaheshG.stdf-viewer"
+                                        class="link" target="_blank">Marketplace</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card oss-card reveal-up delay-2">
+                            <div class="oss-visual oss-sql">
+                                <div class="sql-tables">
+                                    <div class="table-icon table-1">
+                                        <i class="fas fa-table"></i>
+                                    </div>
+                                    <div class="table-icon table-2">
+                                        <i class="fas fa-table"></i>
+                                    </div>
+                                </div>
+                                <div class="sql-connections">
+                                    <div class="connection conn-1"></div>
+                                    <div class="connection conn-2"></div>
+                                </div>
+                                <div class="ddl-text">
+                                    <span class="sql-keyword">CREATE</span>
+                                    <span class="sql-keyword">TABLE</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="badge">20+ Downloads</div>
+                                <h3>SQL DDL Viewer</h3>
+                                <p>Streamlined visualization of SQL Data Definition Language statements for better DB
+                                    planning.</p>
+                                <div class="project-links-row">
+                                    <a href="https://marketplace.visualstudio.com/items?itemName=MaheshG.ddl-viewer"
+                                        class="link" target="_blank">Marketplace</a>
+                                    <a href="https://github.com/MaheshGachale/SQL_DDL_Viewer" class="link"
+                                        target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="experience section-padding">
+                <div class="container">
+                    <div class="section-title">
+                        <span class="subtitle">Timeline</span>
+                        <h2>Career Journey</h2>
+                    </div>
+                    <div class="timeline">
+                        <!-- Current Role -->
+                        <div class="timeline-item reveal-left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">March 2025 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Software Test Engineer (Full Stack QA)</h3>
+                                <p class="company">Siemens India</p>
+                                <ul>
+                                    <li>Individual Contributor on critical <strong>SHIP</strong> module, ensuring
+                                        end-to-end
+                                        quality.</li>
+                                    <li>Expertise in <strong>Manual, Automation, API, and ETL testing</strong>.</li>
+                                    <li>Implementing UI automation with <strong>Playwright</strong> and ETL automation
+                                        with
+                                        <strong>Pytest/Redshift</strong>.
+                                    </li>
+                                    <li>Developed an <strong>AI-based chatbot agent</strong> to streamline test case
+                                        design.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Previous Role -->
+                        <div class="timeline-item reveal-right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Sept 2022 - March 2025</div>
+                            <div class="timeline-content">
+                                <h3>Test Automation Engineer</h3>
+                                <p class="company">Quantiphi Private Limited</p>
+                                <ul>
+                                    <li>Executed Functional, Integration, Regression, and End-to-End testing for
+                                        high-stakes
+                                        clients.</li>
+                                    <li>Designed and implemented the <strong>Playwright framework</strong> from scratch
+                                        for
+                                        multiple projects.</li>
+                                    <li>Conducted ETL and Database testing using complex SQL queries.</li>
+                                    <li>Successfully led automation delivery and received Multiple Performance Awards.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta section-padding">
+                <div class="container">
+                    <div class="cta-banner">
+                        <h2>Ready to Scale Your Quality?</h2>
+                        <p>Looking for someone who can automate UI/API tests, validate complex ETL pipelines, and ensure
+                            performance at scale?</p>
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact section-padding bg-light">
+                <div class="container">
+                    <div class="section-title">
+                        <span class="subtitle">Contact</span>
+                        <h2>Get In Touch</h2>
+                    </div>
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h3>Let's build reliable software together</h3>
+                            <p>I'm available for consultations on test architecture, automation frameworks, and data
+                                quality
+                                engineering.</p>
+                            <ul class="contact-list">
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span>maheshgachale85@gmail.com</span>
+                                </li>
+                                <li>
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>linkedin.com/in/mahesh-gachale-5b7448206</span>
+                                </li>
+                                <li>
+                                    <i class="fab fa-github"></i>
+                                    <span>github.com/MaheshGachale</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <form class="contact-form" id="contactForm"
+                            action="https://formspree.io/f/maheshgachale85@gmail.com" method="POST">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            <div id="formFeedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-content">
+                <div class="footer-logo">Mahesh<span>.</span></div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/mahesh-gachale-5b7448206" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/MaheshGachale" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <p class="copyright">&copy; 2026 Mahesh Gachale. All rights reserved.</p>
+            </div>
+        </footer>
+    </div><!-- End Main Content -->
 
     <script type="module" src="main.js"></script>
 </body>
