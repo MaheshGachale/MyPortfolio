@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize EmailJS with environment variable
+    const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'qDAoyswbaALvGHlQK';
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init({
+            publicKey: EMAILJS_PUBLIC_KEY,
+        });
+    }
+
     // Landing Choice Screen
     const landingChoice = document.getElementById('landingChoice');
     const mainContent = document.getElementById('mainContent');
