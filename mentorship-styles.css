@@ -423,3 +423,165 @@
         font-size: 1.125rem;
     }
 }
+
+/* Footer Styles for Mentorship Page */
+footer .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    text-align: left;
+}
+
+footer .footer-brand h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+footer .footer-brand p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+footer .footer-links h4,
+footer .footer-social h4 {
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+    color: white;
+    font-weight: 600;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+footer .footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+footer .footer-links a:hover {
+    color: var(--accent);
+}
+
+footer .social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+footer .social-links a {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 1.125rem;
+}
+
+footer .social-links a:hover {
+    background: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+footer .footer-bottom {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+footer .footer-bottom p {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Responsive Footer Styles */
+@media (max-width: 991px) {
+    footer .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    footer .footer-brand {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    footer .footer-links,
+    footer .footer-social {
+        text-align: center;
+    }
+
+    footer .footer-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    footer .footer-brand,
+    footer .footer-links,
+    footer .footer-social {
+        text-align: center;
+    }
+
+    footer .footer-brand h3 {
+        font-size: 1.25rem;
+    }
+
+    footer .footer-brand p {
+        font-size: 0.875rem;
+    }
+
+    footer .footer-links h4,
+    footer .footer-social h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    footer .footer-links ul {
+        align-items: center;
+    }
+
+    footer .social-links {
+        justify-content: center;
+    }
+
+    footer .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    footer .footer-bottom {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
+}
